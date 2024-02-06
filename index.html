@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receptai</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <div class="main-wrapper">
+        <div class="info-wrapper">
+            <h1>Pasirinkite receptą</h1>
+            <div class="card-wrapper">
+                <div class="recipe-card" id="chicken-recipe">
+                    <img src="chosen.png" alt="" class="chosen" id="chicken-chosen">
+                    <img src="vistiena.png" alt="Vistiena">
+                    <div class="card-text">
+                        <h3>Vištiena su solotom</h3>
+                        <p>Amet et at aliquam duis ut morbi turpis. Quis cursus tincidunt risus purus faucibus elit ut. Pellentesque montes.
+                    </p>
+                    </div>
+                </div>
+                <div class="recipe-card" id="cake-recipe">
+                    <img src="chosen.png" alt="" class="chosen" id="cake-chosen">
+                    <img src="tortas.png" alt="Tortas">
+                    <div class="card-text">
+                        <h3>Tortas su mėlynėm</h3>
+                        <p>Amet et at aliquam duis ut morbi turpis. Quis cursus tincidunt risus purus faucibus elit ut. Pellentesque montes.
+                        </p>
+                    </div>
+                </div>
+                <div class="recipe-card" id="pasta-recipe">
+                    <img src="chosen.png" alt="" class="chosen" id="pasta-chosen">
+                    <img src="makaronai.png" alt="Makaronai">
+                    <div class="card-text">
+                        <h3>Makaronai su mėsa</h3>
+                        <p>Amet et at aliquam duis ut morbi turpis. Quis cursus tincidunt risus purus faucibus elit ut. Pellentesque montes.
+                        </p>
+                    </div>    
+                </div>
+            </div>
+        </div>
+        <div class="info-wrapper">
+            <h1>Kiek porcijų gaminsite?</h1>
+
+            <input type="range" min="1" max="10" value="2" id="slider-wrapper">
+            <output for="slider-wrapper" id="sliderValue" class="out">2</output>
+
+
+        </div>
+
+        <div class="info-wrapper" id="ingridients">
+            <h1>Jums reikės šių ingredientų, tokiais kiekiais: </h1>
+            <div id="results"></div>
+        </div>
+    </div>
+</body>
+</html>
